@@ -1,0 +1,34 @@
+---
+layout: layouts/dropdown.liquid
+title: Dropdown Menu
+---
+<header>
+	<nav aria-labelledby="nav-label" class="nav--dropdown" id="site-nav">
+		<span hidden id="nav-label">Site</span>
+		<ul role="list">
+			<li data-has-children>
+				<span>Products</span>
+
+				<ul role="list">
+					<li><a href="/home/" aria-current="page">Kitchen</a></li>
+					<li><a href="/home/">Bathroom</a></li>
+					<li data-has-children>
+						<span>Personal Care</span>
+						<ul role="list">
+							<li><a href="#">Hair care</a></li>
+							<li><a href="#">Face care</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li data-has-children>
+				<span>Team</span>
+					<ul role="list">
+					<li><a href="/home/">Get to know us</a></li>
+					<li><a href="/home/">Contact us</a></li>
+				</ul>
+				</li>
+			<li><a href="#">Press</a></li>
+		</ul>
+	</nav>
+</header>
